@@ -1,0 +1,1192 @@
+fileFormatVersion: 2
+guid: 024b25864fb1c2246a54ebda7ef6781f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1204
+        width: 147
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb26d8b498d77824bae72a11d60c152a
+      internalID: -1444337393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_1
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1096
+        width: 243
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100981b58f36bbe48b58bb998345200a
+      internalID: -1700987507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_2
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1200
+        width: 200
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23ec8fc3b17a4845b332d35e339b569
+      internalID: 1835421663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_3
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1309
+        width: 62
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f60be11967327c4ab17a19d43d4e3da
+      internalID: 1663135278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_4
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1301
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f213608a5a89b14fa5def60ab8b1df8
+      internalID: -1398189520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_5
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 1319
+        width: 79
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d77f1211344ce489486dc9d53e96b3
+      internalID: 955335876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_6
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 1263
+        width: 165
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9356ce278d1b5b048a7047ab7d7767cc
+      internalID: -1059773526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_7
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1171
+        width: 114
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cea228b0e8d75841b6a430933587314
+      internalID: -1149690762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_8
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1180
+        width: 135
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c22e252d1e16914dacd154b01efefed
+      internalID: 1992040087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_9
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1005
+        width: 149
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11b9ad489c52f64f8efd04afac467d8
+      internalID: 261107375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_10
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1173
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5726a7f578e17ef4abb9325fafbafc44
+      internalID: 1287993102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 904
+        width: 155
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603dd761a6d765940b5c087f9fb3d40e
+      internalID: -1660938259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_12
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1098
+        width: 39
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c98b535a8460142b26cd25b957f393
+      internalID: 1254373913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_13
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 849
+        width: 213
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763f24fc6d078704fb7b0916d46534e5
+      internalID: -1733358477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_14
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1081
+        width: 115
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f32ebf83e892a9468199efa714575ed
+      internalID: 1927276395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_15
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 890
+        width: 144
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67bcd158ef45c804884a80a3889b8083
+      internalID: 1571491424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_16
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 856
+        width: 182
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849b5f987380f414fa6eaedff8a48883
+      internalID: 1331272579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_17
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 990
+        width: 172
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0e2035e2c809543839d5defd894104
+      internalID: -1443139350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 732
+        width: 205
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f846a88305afb7b49b2a84cd1eb8ee33
+      internalID: -1217854697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_19
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 736
+        width: 132
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3211c564414f8343a1be71c6a4d1dcc
+      internalID: 378478638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_20
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 571
+        width: 103
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef55fe4309a2be44b774fb7bce6b6fe
+      internalID: -559600969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_21
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 663
+        width: 104
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db544c158127eee4b9521f49d0474b6a
+      internalID: 981366291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_22
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 689
+        width: 171
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b69ff01654e2414d91e7999330c5a77
+      internalID: 690552413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_23
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 720
+        width: 115
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c245294ca0a732e4d9ce6b48373f7f9f
+      internalID: 1526497332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_24
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 638
+        width: 223
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06817f70d3dc99e45a3c496d135ebddf
+      internalID: 176369245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_25
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 440
+        width: 202
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b961e6492fc304b996c61c32f2fbe9
+      internalID: -1465374751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_26
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 546
+        width: 94
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e1b5457ba529c478711a022629d1da
+      internalID: 732518292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_27
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 530
+        width: 104
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f514c5f26a9431145a680f73a3fd6f6d
+      internalID: 99549054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_28
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 536
+        width: 122
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156825e97efb2d14abd0c4ed2c14c34c
+      internalID: 242503466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_29
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 354
+        width: 179
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b9ddfdbc202e846b71e99a523d44fb
+      internalID: -582477429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_30
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 340
+        width: 215
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d8bd5dc578a084bab449ce4436338c
+      internalID: -1908515943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_31
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 376
+        width: 197
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d470fb951b3e44388f07fcdfe813d4
+      internalID: -1129865688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_32
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 397
+        width: 99
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13916e0e321a6c84fb18ed5a3fed23ee
+      internalID: -67823402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_33
+      rect:
+        serializedVersion: 2
+        x: 1703
+        y: 403
+        width: 120
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9ad98d7e35fc04eabee3dba48a4281
+      internalID: 377164830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_34
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 313
+        width: 101
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e207969aef06f49996c19d108001a1
+      internalID: -758404321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_35
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 308
+        width: 226
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28429f8c824298b48a5ed74a1e68b4a9
+      internalID: -981868069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_36
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 352
+        width: 209
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc731c924b83324abb7d7097ec31aa8
+      internalID: 1948410546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_37
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 486
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba509103a4945a40b2fa66be0badb82
+      internalID: 882744074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_38
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 238
+        width: 205
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcd2da4a58193c43a1f3d76ec6b2d80
+      internalID: -824565915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_39
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 11
+        width: 244
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbf1f99c3ada4443a6847ca560ecf72
+      internalID: -2134180463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_40
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 125
+        width: 199
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae93b65de8fdb147a40dbfa1fd512b4
+      internalID: -2140051961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_41
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 37
+        width: 100
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4bf8612cdb0114458ace1e42b42798a
+      internalID: 251046678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_42
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 294
+        width: 12
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480d6a157a7dca24b8b98647fc89a053
+      internalID: -1297856253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_43
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 26
+        width: 113
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67bdb6fe8067c7c40ad42dfbfc38a5b3
+      internalID: 485969545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_44
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 30
+        width: 206
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad3bbb9c0a0d1d479691ef539d89957
+      internalID: -156373747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_45
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 72
+        width: 121
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5111571b81deb6a4186db108d43bd972
+      internalID: -720734423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_46
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 32
+        width: 138
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d95aba390eb984293f505c5b4e2405
+      internalID: -717055602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowglobe_Assets_TEMP 1_47
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 115
+        width: 183
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca23cf47272207842ba323bcd31e03e0
+      internalID: -71128119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: cc59d9bd6539f6f41bd3f98e833fa32c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Snowglobe_Assets_TEMP 1_6: -1059773526
+      Snowglobe_Assets_TEMP 1_46: -717055602
+      Snowglobe_Assets_TEMP 1_3: 1663135278
+      Snowglobe_Assets_TEMP 1_34: -758404321
+      Snowglobe_Assets_TEMP 1_0: -1444337393
+      Snowglobe_Assets_TEMP 1_14: 1927276395
+      Snowglobe_Assets_TEMP 1_25: -1465374751
+      Snowglobe_Assets_TEMP 1_27: 99549054
+      Snowglobe_Assets_TEMP 1_38: -824565915
+      Snowglobe_Assets_TEMP 1_5: 955335876
+      Snowglobe_Assets_TEMP 1_44: -156373747
+      Snowglobe_Assets_TEMP 1_11: -1660938259
+      Snowglobe_Assets_TEMP 1_15: 1571491424
+      Snowglobe_Assets_TEMP 1_21: 981366291
+      Snowglobe_Assets_TEMP 1_42: -1297856253
+      Snowglobe_Assets_TEMP 1_45: -720734423
+      Snowglobe_Assets_TEMP 1_7: -1149690762
+      Snowglobe_Assets_TEMP 1_20: -559600969
+      Snowglobe_Assets_TEMP 1_41: 251046678
+      Snowglobe_Assets_TEMP 1_37: 882744074
+      Snowglobe_Assets_TEMP 1_39: -2134180463
+      Snowglobe_Assets_TEMP 1_16: 1331272579
+      Snowglobe_Assets_TEMP 1_17: -1443139350
+      Snowglobe_Assets_TEMP 1_24: 176369245
+      Snowglobe_Assets_TEMP 1_29: -582477429
+      Snowglobe_Assets_TEMP 1_30: -1908515943
+      Snowglobe_Assets_TEMP 1_8: 1992040087
+      Snowglobe_Assets_TEMP 1_10: 1287993102
+      Snowglobe_Assets_TEMP 1_23: 1526497332
+      Snowglobe_Assets_TEMP 1_26: 732518292
+      Snowglobe_Assets_TEMP 1_4: -1398189520
+      Snowglobe_Assets_TEMP 1_12: 1254373913
+      Snowglobe_Assets_TEMP 1_36: 1948410546
+      Snowglobe_Assets_TEMP 1_9: 261107375
+      Snowglobe_Assets_TEMP 1_2: 1835421663
+      Snowglobe_Assets_TEMP 1_47: -71128119
+      Snowglobe_Assets_TEMP 1_19: 378478638
+      Snowglobe_Assets_TEMP 1_18: -1217854697
+      Snowglobe_Assets_TEMP 1_40: -2140051961
+      Snowglobe_Assets_TEMP 1_32: -67823402
+      Snowglobe_Assets_TEMP 1_13: -1733358477
+      Snowglobe_Assets_TEMP 1_43: 485969545
+      Snowglobe_Assets_TEMP 1_22: 690552413
+      Snowglobe_Assets_TEMP 1_28: 242503466
+      Snowglobe_Assets_TEMP 1_1: -1700987507
+      Snowglobe_Assets_TEMP 1_35: -981868069
+      Snowglobe_Assets_TEMP 1_33: 377164830
+      Snowglobe_Assets_TEMP 1_31: -1129865688
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
