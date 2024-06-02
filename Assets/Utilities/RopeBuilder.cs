@@ -1,27 +1,25 @@
 #if UNITY_EDITOR
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public class RopeBuilder2D : MonoBehaviour
+public class RopeBuilder : MonoBehaviour
 {
-    [SerializeField] HingeJoint2D m_segementPrefab;
+    [SerializeField] HingeJoint m_segementPrefab;
     [SerializeField] float m_segmentOffset;
     [SerializeField] int m_segementCount;
     [SerializeField] bool m_axis;
 
     public void SpawnSegment()
     {
-        HingeJoint2D lastSegment = null; try { lastSegment = GetComponentsInChildren<HingeJoint2D>()[^1]; } catch (Exception) { }
-        HingeJoint2D segment = Instantiate(m_segementPrefab, transform);
+        HingeJoint lastSegment = null; try { lastSegment = GetComponentsInChildren<HingeJoint>()[^1]; } catch (Exception) { }
+        HingeJoint segment = Instantiate(m_segementPrefab, transform);
 
         if (lastSegment == null) return;
 
         segment.transform.position = lastSegment.transform.position;
         segment.transform.position += (m_axis ? Vector3.right : -Vector3.up) * m_segmentOffset;
-        segment.connectedBody = lastSegment.attachedRigidbody;
+        segment.connectedBody = lastSegment.GetComponent<Rigidbody>();
     }
 
     public void SpawnSegments()
@@ -30,14 +28,14 @@ public class RopeBuilder2D : MonoBehaviour
     }
 }
 
-[CustomEditor(typeof(RopeBuilder2D))]
-public class RopeBuilder2DEditor : Editor
+[CustomEditor(typeof(RopeBuilder))]
+public class RopeBuilderEditor : Editor
 {
     public override void OnInspectorGUI()
     {
         DrawDefaultInspector();
 
-        RopeBuilder2D ropeBuilder = (RopeBuilder2D)target;
+        RopeBuilder ropeBuilder = (RopeBuilder)target;
         if (GUILayout.Button("Spawn Segments")) ropeBuilder.SpawnSegments();
     }
 }
