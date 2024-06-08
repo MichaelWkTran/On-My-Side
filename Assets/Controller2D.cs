@@ -3,6 +3,7 @@ using UnityEngine;
 public class Controller2D : MonoBehaviour
 {
     public float m_gravityScale;
+    public float m_particleForceScale;
     public float m_accelerationForce;
     public float m_particleAccelerationForce;
     public float m_minAccelerationInput;
@@ -35,6 +36,5 @@ public class Controller2D : MonoBehaviour
 #endif
 
         Physics2D.gravity *= m_gravityScale;// * gyro.gravity;
-        Physics2D.gravity = new Vector3(Physics2D.gravity.x, Physics2D.gravity.y) + (m_InputAcceleration * m_accelerationForce);
     }
 }
