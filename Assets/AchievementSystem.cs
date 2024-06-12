@@ -17,9 +17,9 @@ public class AchievementSystem : MonoBehaviour
         public string m_onInitEvent; //The visual scripting custom event used to initialize the achievement
         public string m_onUpdateEvent; //The visual scripting custom event used to update the achievement
 
-        public Dictionary<Observer, Observer.ObserverDelegate> m_observers;
+        [NonSerialized] public Dictionary<Observer, Observer.ObserverDelegate> m_observers; //List of observers that the achievement is monitoring
+        public delegate void OnUpdateNotifyDelegate(); [NonSerialized] public OnUpdateNotifyDelegate m_onUpdateNotify;
     }
-
     public Achievement[] m_achievements;
 
     void Start()
@@ -41,11 +41,17 @@ public class AchievementSystem : MonoBehaviour
         _observer.m_onNotify += onNotify;
     }
 
+    public void AchivementUpdateNotify(Achievement _achievement)
+    {
+        _achievement.m_onUpdateNotify?.Invoke();
+    }
+
     public void CompleteAchievement(Achievement _achievement)
     {
         foreach (KeyValuePair<Observer, Observer.ObserverDelegate> pair in _achievement.m_observers) pair.Key.m_onNotify -= pair.Value;
         _achievement.m_observers = null;
         _achievement.m_progress = _achievement.m_maxProgress;
+        _achievement.m_onUpdateNotify?.Invoke();
     }
 }
 
