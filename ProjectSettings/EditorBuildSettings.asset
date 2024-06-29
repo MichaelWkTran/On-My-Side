@@ -11,4 +11,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Living Room.unity
     guid: 26118c90a29b66742b4f22727c7f220b
+  - enabled: 1
+    path: Assets/Scenes/Living Room/Levels/Living Room Lv1.unity
+    guid: e82029b9225378345b2f8620e73b3618
+  - enabled: 1
+    path: Assets/Scenes/Living Room/Levels/Living Room Lv2.unity
+    guid: 764137902f054744abb0070ccb66b838
+  - enabled: 1
+    path: Assets/Scenes/Living Room/Levels/Living Room Lv3.unity
+    guid: bc048b7e95ca5704ab0032317461b764
+  - enabled: 1
+    path: Assets/Scenes/Living Room/Levels/Living Room Lv4.unity
+    guid: 78839ad2fe51a2b45b47760dcebeed68
+  - enabled: 1
+    path: Assets/Scenes/Living Room/Levels/Living Room Lv5.unity
+    guid: f2f83a8073c75e4448f8f3a3b9f0983e
+  - enabled: 1
+    path: Assets/Scenes/Living Room/Levels/Living Room Lv6.unity
+    guid: ba55e3ef4ccbe2844834068e37237981
+  - enabled: 1
+    path: Assets/Scenes/Living Room/Levels/Living Room Lv7.unity
+    guid: 9e5d3801ffd382c4cb3a561a4773a408
+  - enabled: 1
+    path: Assets/Scenes/Living Room/Levels/Living Room Lv8.unity
+    guid: 6b9cd0513ce547e4a97e48dbe19d2963
+  - enabled: 1
+    path: Assets/Scenes/Living Room/Levels/Living Room Lv9.unity
+    guid: 379706f72a082de4ba95793636bb9411
   m_configObjects: {}
