@@ -8,6 +8,17 @@ public class GameMode : MonoBehaviour
     public static GameMode m_instance;
     [SerializeField] uint m_collectedStars = 0U;
     [SerializeField] float m_time = 0.0f;
+    bool m_paused; public bool m_Paused
+    {
+        get { return m_paused; }
+        set
+        {
+            m_paused = value;
+            if (m_paused) { Time.timeScale = 0.0f; m_pauseUI.m_canvas.gameObject.SetActive(true); }
+            else { Time.timeScale = 1.0f; m_pauseUI.m_canvas.gameObject.SetActive(false); }
+        }
+    }
+    bool m_isPlaying = true;
 
     [Serializable] struct GameplayUI
     {
@@ -31,10 +42,12 @@ public class GameMode : MonoBehaviour
     [Serializable] struct GameOverUI
     {
         public Canvas m_canvas;
-        public TMP_Text m_time;
-        public RectTransform[] m_starUI;
 
     } [SerializeField] GameOverUI m_gameOverUI;
+    [SerializeField] ChangeScene.ChangeSceneProperties m_restartLevelTransition;
+    [SerializeField] string m_levelSelectScene;
+    [SerializeField] ChangeScene.ChangeSceneProperties m_levelSelectTransition;
+    [SerializeField] ChangeScene.ChangeSceneProperties m_nextLevelTransition;
 
     void Awake()
     {
@@ -53,15 +66,23 @@ public class GameMode : MonoBehaviour
     void Update()
     {
         //Update time and UI
-        if (Time.deltaTime > 0)
+        if (Time.deltaTime > 0 && m_isPlaying)
         {
             m_time += Time.deltaTime;
 
         }
     }
 
+    void OnDestroy()
+    {
+        //Reset the timescale to prevent the next scene from being paused
+        Time.timeScale = 1.0f;
+    }
+
     public void AddStar()
     {
+        if (!m_isPlaying) return;
+
         //Get Stars
         RectTransform starUI = m_gameplayUI.m_starUI[m_collectedStars];
         
@@ -78,23 +99,25 @@ public class GameMode : MonoBehaviour
 
     public void CompleteLevel()
     {
-        GoToNextLevel();
+        m_isPlaying = false;
+        m_winUI.m_time.text = Math.Round(m_time, 2).ToString();
+        m_winUI.m_canvas.gameObject.SetActive(true);
     }
-
-    public void Pause()
+    
+    public void GameOver()
     {
-        Time.timeScale = 0.0f;
+        m_isPlaying = false;
+        m_gameOverUI.m_canvas.gameObject.SetActive(true);
     }
 
-    public void RetryLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
-    }
+    public void Pause() { m_Paused = true; }
 
-    public void GoToLevelSelect()
-    {
+    public void UnPause() { m_Paused = false; }
 
-    }
+
+    public void RetryLevel() { ChangeScene.LoadScene(SceneManager.GetActiveScene().name, m_restartLevelTransition); }
+
+    public void GoToLevelSelect() { ChangeScene.LoadScene(m_levelSelectScene, m_levelSelectTransition); }
 
     public void GoToNextLevel()
     {
@@ -125,7 +148,7 @@ public class GameMode : MonoBehaviour
         if (senarioIndex <= senarios.Length)
         {
             //Go to the new level scene
-            SceneManager.LoadScene(senarios[senarioIndex].m_levels[levelIndex]);
+            ChangeScene.LoadScene(senarios[senarioIndex].m_levels[levelIndex], m_nextLevelTransition);
         }
         //If there are no more senarios
         else

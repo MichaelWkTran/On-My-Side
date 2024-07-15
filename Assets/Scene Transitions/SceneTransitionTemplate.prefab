@@ -33,6 +33,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -54,8 +55,10 @@ MonoBehaviour:
   m_newSceneName: 
   m_inTransition: {fileID: 0}
   m_outTransition: {fileID: 0}
-  m_loadSceneMode: 0
-  m_loadedAsync: 0
+  m_changeSceneProperties:
+    m_sceneTransitionPrefab: {fileID: 0}
+    m_loadSceneMode: 0
+    m_loadedAsync: 0
 --- !u!223 &707837860948674263
 Canvas:
   m_ObjectHideFlags: 0
@@ -73,7 +76,6 @@ Canvas:
   m_OverrideSorting: 1
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -122,4 +124,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0

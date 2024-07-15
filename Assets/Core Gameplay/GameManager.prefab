@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-4905331162547496555
 MonoBehaviour:
@@ -66,6 +66,4 @@ MonoBehaviour:
     - Living Room Lv17
     - Living Room Lv18
     - Living Room Lv19
-    - Living Room Lv10
-  - m_hubWorld: 
-    m_levels: []
+    - Living Room Lv20

@@ -6,7 +6,7 @@ using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager m_instance;
+    static GameManager m_instance;
     public static GameManager m_Instance
     {
         get

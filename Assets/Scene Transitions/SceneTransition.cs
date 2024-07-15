@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static ChangeScene;
 
 [RequireComponent(typeof(Animator))]
 public class SceneTransition : MonoBehaviour
@@ -12,8 +14,7 @@ public class SceneTransition : MonoBehaviour
     public string m_newSceneName;
     public AnimationClip m_inTransition;
     public AnimationClip m_outTransition;
-    [HideInInspector] public LoadSceneMode m_loadSceneMode = LoadSceneMode.Single;
-    [HideInInspector] public bool m_loadedAsync = false;
+    [HideInInspector] public ChangeSceneProperties m_changeSceneProperties;
     Animator m_animator;
     AnimatorOverrideController m_animatorOverrideController;
 
@@ -45,7 +46,7 @@ public class SceneTransition : MonoBehaviour
         if (m_inTransition == null && m_outTransition == null)
         {
             Debug.LogError("The SceneTransition have transitions");
-            if (!m_loadedAsync) SceneManager.LoadScene(m_newSceneName, m_loadSceneMode); else SceneManager.LoadSceneAsync(m_newSceneName, m_loadSceneMode);
+            if (!m_changeSceneProperties.m_loadedAsync) SceneManager.LoadScene(m_newSceneName, m_changeSceneProperties.m_loadSceneMode); else SceneManager.LoadSceneAsync(m_newSceneName, m_changeSceneProperties.m_loadSceneMode);
         }
         else StartCoroutine(LoadLevel());
 
@@ -56,7 +57,7 @@ public class SceneTransition : MonoBehaviour
     IEnumerator LoadLevel()
     {
         if (m_inTransition != null) yield return new WaitForSecondsRealtime(m_inTransition.length);
-        if (!m_loadedAsync) SceneManager.LoadScene(m_newSceneName, m_loadSceneMode); else SceneManager.LoadSceneAsync(m_newSceneName, m_loadSceneMode);
+        if (!m_changeSceneProperties.m_loadedAsync) SceneManager.LoadScene(m_newSceneName, m_changeSceneProperties.m_loadSceneMode); else SceneManager.LoadSceneAsync(m_newSceneName, m_changeSceneProperties.m_loadSceneMode);
     }
 
     IEnumerator FinishTransition()

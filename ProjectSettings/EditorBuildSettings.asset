@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/Title.unity
     guid: dbcbc776eb2060f4eae84aeefbe9d7a2
   - enabled: 1
+    path: Assets/Scenes/Menus/Level Select.unity
+    guid: d5697de727b42934db4b7929c6a4b5a1
+  - enabled: 1
     path: Assets/Scenes/Living Room.unity
     guid: 26118c90a29b66742b4f22727c7f220b
   - enabled: 1
