@@ -99,14 +99,35 @@ public class GameMode : MonoBehaviour
 
     public void CompleteLevel()
     {
+        //Pause Game and open win UI
         m_isPlaying = false;
-        m_winUI.m_time.text = Math.Round(m_time, 2).ToString();
+        Time.timeScale = 0.0f;
         m_winUI.m_canvas.gameObject.SetActive(true);
+
+        //Get and Update Save Variables
+        int[] scenarioLevel = GameManager.m_Instance.GetLevelIndex(SceneManager.GetActiveScene().name);
+        GameManager.Scenario.Level level = GameManager.m_Instance.m_scenarios[scenarioLevel[0]].m_levels[scenarioLevel[1]];
+        m_time = (float)Math.Round(m_time, 2);
+        
+        //Update save data and trigger new best time
+        if (m_time < level.m_time || level.m_time <= 0.0f)
+        {
+            level.m_time = m_time;
+        }
+
+        level.m_collectedStars = Math.Max(m_collectedStars, level.m_collectedStars);
+
+        //Save Data
+        GameManager.m_Instance.m_scenarios[scenarioLevel[0]].m_levels[scenarioLevel[1]] = level;
+
+        //Update Win UI
+        m_winUI.m_time.text = m_time.ToString();
     }
     
     public void GameOver()
     {
         m_isPlaying = false;
+        Time.timeScale = 0.0f;
         m_gameOverUI.m_canvas.gameObject.SetActive(true);
     }
 
@@ -114,43 +135,42 @@ public class GameMode : MonoBehaviour
 
     public void UnPause() { m_Paused = false; }
 
-
     public void RetryLevel() { ChangeScene.LoadScene(SceneManager.GetActiveScene().name, m_restartLevelTransition); }
 
     public void GoToLevelSelect() { ChangeScene.LoadScene(m_levelSelectScene, m_levelSelectTransition); }
 
     public void GoToNextLevel()
     {
-        GameManager.Senario[] senarios = GameManager.m_Instance.m_Scenarios;
-        int senarioIndex; //The index of the senario to go to
+        GameManager.Scenario[] scenarios = GameManager.m_Instance.m_scenarios;
+        int scenarioIndex; //The index of the scenario to go to
         int levelIndex; //The index of the level to go to
 
-        //Assign the senario and level index with the value associated with this scene
+        //Assign the scenario and level index with the value associated with this scene
         {
             string thisSceneName = SceneManager.GetActiveScene().name;
-            int[] senarioLevel = GameManager.m_Instance.GetLevelIndex(thisSceneName);
-            senarioIndex = senarioLevel[0];
-            levelIndex = senarioLevel[1];
+            int[] scenarioLevel = GameManager.m_Instance.GetLevelIndex(thisSceneName);
+            scenarioIndex = scenarioLevel[0];
+            levelIndex = scenarioLevel[1];
         }
 
         //Update Level Index
         levelIndex++;
 
-        //Check whether the next level is not available in this senario
-        if (levelIndex >= senarios[senarioIndex].m_levels.Length)
+        //Check whether the next level is not available in this scenario
+        if (levelIndex >= scenarios[scenarioIndex].m_levels.Length)
         {
-            //Move to next senario if all levels in this senario has finished
-            senarioIndex++;
+            //Move to next scenario if all levels in this scenario has finished
+            scenarioIndex++;
             levelIndex = 0;
         }
 
-        //Check whether there are any more senarios to go to
-        if (senarioIndex <= senarios.Length)
+        //Check whether there are any more scenarios to go to
+        if (scenarioIndex <= scenarios.Length)
         {
             //Go to the new level scene
-            ChangeScene.LoadScene(senarios[senarioIndex].m_levels[levelIndex], m_nextLevelTransition);
+            ChangeScene.LoadScene(scenarios[scenarioIndex].m_levels[levelIndex].m_levelScene, m_nextLevelTransition);
         }
-        //If there are no more senarios
+        //If there are no more scenarios
         else
         {
             //Go to the thanks for playing scene

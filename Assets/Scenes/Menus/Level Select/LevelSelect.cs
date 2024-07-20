@@ -18,20 +18,22 @@ public class LevelSelect : MonoBehaviour
     {
         m_pagedRect.UpdatePagination();
 
-        //Add or remove pages to match the desired number of senarios
-        while (m_pagedRect.Pages.Count < m_gameManagerPrefab.m_Scenarios.Length)
-        {
-            m_pagedRect.AddPageUsingTemplate();
-        }
-        while (m_pagedRect.Pages.Count > m_gameManagerPrefab.m_Scenarios.Length)
-        {
-            m_pagedRect.RemovePage(m_pagedRect.Pages.Count - 1);
-        }
+        //Add or remove pages to match the desired number of scenarios
+        for (int i = m_pagedRect.Pages.Count; i < m_gameManagerPrefab.m_scenarios.Length; i++) m_pagedRect.AddPageUsingTemplate();
+        for (int i = m_pagedRect.Pages.Count; i > m_gameManagerPrefab.m_scenarios.Length; i--) m_pagedRect.RemovePage(i - 1);
+        //while (m_pagedRect.Pages.Count < m_gameManagerPrefab.m_scenarios.Length)
+        //{
+        //    m_pagedRect.AddPageUsingTemplate();
+        //}
+        //while (m_pagedRect.Pages.Count > m_gameManagerPrefab.m_scenarios.Length)
+        //{
+        //    m_pagedRect.RemovePage(m_pagedRect.Pages.Count - 1);
+        //}
 
         // Update the content of each page to match the scenarios
         for (int pageIndex = 0; pageIndex < m_pagedRect.Pages.Count; pageIndex++)
         {
-            GameManager.Senario senario = m_gameManagerPrefab.m_Scenarios[pageIndex];
+            GameManager.Scenario scenario = m_gameManagerPrefab.m_scenarios[pageIndex];
             Page page = m_pagedRect.Pages[pageIndex];
             LevelSelectPage pageSelect = page.GetComponent<LevelSelectPage>();
 
@@ -42,7 +44,7 @@ public class LevelSelect : MonoBehaviour
             page.PageTitle = "World " + (pageIndex + 1).ToString();
 
             //Create level buttons
-            for (int levelIndex = 0; levelIndex < senario.m_levels.Length; levelIndex++)
+            for (int levelIndex = 0; levelIndex < scenario.m_levels.Length; levelIndex++)
             {
                 Button levelButton = Instantiate(m_levelButtonPrefab, pageSelect.m_levelButtonGroup.transform);
                 levelButton.GetComponentInChildren<TMPro.TMP_Text>().text = (levelIndex + 1).ToString();
@@ -59,21 +61,21 @@ public class LevelSelect : MonoBehaviour
         //Set level button onclick events
         for (int pageIndex = 0; pageIndex < m_pagedRect.Pages.Count; pageIndex++)
         {
-            GameManager.Senario senario = gameManager.m_Scenarios[pageIndex];
+            GameManager.Scenario scenario = gameManager.m_scenarios[pageIndex];
             Page page = m_pagedRect.Pages[pageIndex];
             LevelSelectPage pageSelect = page.GetComponent<LevelSelectPage>();
 
             //Get level buttons from button group children
-            for (int levelIndex = 0; levelIndex < senario.m_levels.Length; levelIndex++)
+            for (int levelIndex = 0; levelIndex < scenario.m_levels.Length; levelIndex++)
             {
                 int capturedIndex = levelIndex;
                 pageSelect.m_levelButtonGroup.transform.GetChild(levelIndex).
                     GetComponent<Button>().onClick.
-                    AddListener(() => { ChangeScene.LoadScene(senario.m_levels[capturedIndex], m_levelTransition); });
+                    AddListener(() => { ChangeScene.LoadScene(scenario.m_levels[capturedIndex].m_levelScene, m_levelTransition); });
             }
 
             //Set hub world button onclic
-            pageSelect.m_hubWorldButton.onClick.AddListener(() => { ChangeScene.LoadScene(senario.m_hubWorld, m_levelTransition); });
+            pageSelect.m_hubWorldButton.onClick.AddListener(() => { ChangeScene.LoadScene(scenario.m_hubWorld, m_levelTransition); });
         }
     }
 }

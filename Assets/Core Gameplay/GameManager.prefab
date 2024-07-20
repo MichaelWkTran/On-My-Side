@@ -44,26 +44,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9857710010dc44ca15cd7e2ce18715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_senarios:
+  m_scenarios:
   - m_hubWorld: Living Room
     m_levels:
-    - Living Room Lv1
-    - Living Room Lv2
-    - Living Room Lv3
-    - Living Room Lv4
-    - Living Room Lv5
-    - Living Room Lv6
-    - Living Room Lv7
-    - Living Room Lv8
-    - Living Room Lv9
-    - Living Room Lv10
-    - Living Room Lv11
-    - Living Room Lv12
-    - Living Room Lv13
-    - Living Room Lv14
-    - Living Room Lv15
-    - Living Room Lv16
-    - Living Room Lv17
-    - Living Room Lv18
-    - Living Room Lv19
-    - Living Room Lv20
+    - m_levelScene: Living Room Lv1
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv2
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv3
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv4
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv5
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv6
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv7
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv8
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv9
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv10
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv11
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv12
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv13
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv14
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv15
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv16
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv17
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv18
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv19
+      m_collectedStars: 0
+      m_time: 0
+    - m_levelScene: Living Room Lv20
+      m_collectedStars: 0
+      m_time: 0
