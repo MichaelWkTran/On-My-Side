@@ -2282,7 +2282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7385696909040717660, guid: e0168558274d67b489350ace1a94e600, type: 3}
       propertyPath: m_Name
-      value: Star (1)
+      value: Star
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2320,6 +2320,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e23231b489da9c14db787c376e938443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_keys: []
+  m_unlockEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &500353833
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2486,7 +2490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7385696909040717660, guid: e0168558274d67b489350ace1a94e600, type: 3}
       propertyPath: m_Name
-      value: Star (2)
+      value: Star (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2547,7 +2551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7385696909040717660, guid: e0168558274d67b489350ace1a94e600, type: 3}
       propertyPath: m_Name
-      value: Star
+      value: Star (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
