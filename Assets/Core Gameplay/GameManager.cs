@@ -1,10 +1,5 @@
 using System;
 using UnityEngine;
-using static GameManager.ScenariosSave;
-
-using static GameManager;
-
-
 #if UNITY_EDITOR
 using UnityEditor;
 #endif

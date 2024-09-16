@@ -31,23 +31,13 @@ public class Controller2D : MonoBehaviour
         //Update gravity
         if (m_gyroGravityEnabled)
         {
-            if (SystemInfo.supportsGyroscope)
-            {
-                Physics2D.gravity = Input.gyro.gravity;
-            }
-#if UNITY_EDITOR
-            else
-            {
-                int BoolToInt(bool _bool) { return _bool ? 1 : 0; }
-
-                Physics2D.gravity = new Vector3
-                    (
-                    BoolToInt(Input.GetKey(KeyCode.D)) - BoolToInt(Input.GetKey(KeyCode.A)),
-                    BoolToInt(Input.GetKey(KeyCode.W)) - BoolToInt(Input.GetKey(KeyCode.S)),
-                    BoolToInt(Input.GetKey(KeyCode.Q)) - BoolToInt(Input.GetKey(KeyCode.E))
-                    ).normalized;
-            }
-#endif
+            //Physics2D.gravity = Vector2.zero;
+            //
+            ////Control with gyro
+            //if (SystemInfo.supportsGyroscope) Physics2D.gravity = Input.gyro.gravity;
+            ////Control with controller
+            //else Physics2D.gravity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
+            Physics2D.gravity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
 
             Physics2D.gravity *= m_gravityScale;// * gyro.gravity;
         }

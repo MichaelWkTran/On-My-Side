@@ -86,7 +86,7 @@ MonoBehaviour:
     - m_levelScene: Living Room Lv13
       m_collectedStars: 0
       m_time: 0
-    - m_levelScene: Living Room Lv14
+    - m_levelScene: Level Select
       m_collectedStars: 0
       m_time: 0
     - m_levelScene: Living Room Lv15

@@ -120,8 +120,11 @@ public class GameMode : MonoBehaviour
         //Save Data
         GameManager.m_Instance.m_scenarios[scenarioLevel[0]].m_levels[scenarioLevel[1]] = level;
 
-        //Update Win UI
-        m_winUI.m_time.text = m_time.ToString();
+        //Update Win Time
+        m_winUI.m_time.text = "T: " + m_time.ToString();
+
+        //Update Win Time
+        for (int i = 0; i < m_winUI.m_starUI.Length; i++) m_winUI.m_starUI[i].gameObject.SetActive(i + 1 <= m_collectedStars);
     }
     
     public void GameOver()
